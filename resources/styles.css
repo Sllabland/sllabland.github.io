@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+    font-family: F16;
+    src: url("../fonts/Inconsolata-VariableFont_wdth,wght.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+  
+p {
+    padding: 2rem;
+    font-family: F16;
+    color: #ffffff; 
+	}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 10px;
+  
+}
+body {background-color: #272727;} 
+header {
+	
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+  margin-top: -1000px;
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+    margin-bottom: 160px;
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+	
+}
+
+
+
+section
+ {
+	font-family: F16;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #272727;
+  color: white;
+}
+
+maintext
+ {
+	font-family: F16;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #272727;
+  color: white;
+}
+
+h1 {
+	text-align: center;
+	font-family: F16;
+  font-size: 6rem;
+  padding: 2rem;
+  background-color: #272727;
+  color: white;
+}
+
+h2 {
+	text-align: left;
+	font-family: F16;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #272727;
+  color: white;
+}
+
+figure {
+      display: block;
+      margin: 0;
+      padding: 0;
+	text-align: center;
+   }
+
+figcaption {
+      font-family: F16;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffffff; 
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
+}
